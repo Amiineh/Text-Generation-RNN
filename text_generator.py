@@ -16,7 +16,7 @@ learning_rate = 0.01
 seq_len = 40
 stride = 37
 hidden_size = 128
-epoch_size = 30
+epoch_size = 20
 batch_size = 100
 test_size = 5
 
@@ -97,9 +97,10 @@ for epoch in range(epoch_size):
         predicted_char = idx_to_char[np.argmax(predicted, 1)[0]]
 
         res_chars += predicted_char
-        # x_test_idx = []
-        # for w in x_test[0]:
-        #     x_test_idx.append(np.argmax(w))
+        x_test_idx = []
+        for w in x_test[0]:
+            x_test_idx.append(np.argmax(w))
+        print (x_test_idx)
 
     print ("\nGenerated text: ")
     print ("\"%s\"\n\n" %(res_chars))
