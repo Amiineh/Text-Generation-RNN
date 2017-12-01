@@ -47,7 +47,6 @@ for seq_index, seq in enumerate(train_data):
 # for w in x_train[0]:
 #     x_test_idx.append(np.argmax(w))
 # print (x_test_idx)
-# print (idx_to_char[40])
 
 # Model the network:
 x = tf.placeholder(tf.float32, (None, seq_len, dict_size))
@@ -97,6 +96,16 @@ for epoch in range(epoch_size):
         batch_x = x_train[i:i+batch_size]
         batch_y = y_train[i:i+batch_size]
 
+        # x_test_idx = []
+        # for w in batch_x[0]:
+        #     x_test_idx.append(np.argmax(w))
+        # print (x_test_idx)
+        #
+        # x_test_idx = []
+        # for w in batch_y[0]:
+        #     x_test_idx.append(np.argmax(w))
+        # print (x_test_idx)
+
         sess.run(train_op, feed_dict={x:batch_x, y: batch_y})
 
     report_loss, merge_smry = sess.run([loss, merge], feed_dict={x:x_train, y:y_train})
@@ -129,14 +138,17 @@ for epoch in range(epoch_size):
         # Add predicted char to x_test sequence:
         # print (predicted)
         # print (predicted_char)
-        x_test = np.append(np.delete(x_test, 0, axis=1), np.reshape(predicted, [1, 1, dict_size]), axis=1)
+        # x_test = np.append(np.delete(x_test, 0, axis=1), np.reshape(predicted, [1, 1, dict_size]), axis=1)
+
+        rmv = x_test[:,1:,:]
+        x_test = np.append(rmv, np.reshape(predicted, [1, 1, dict_size]), axis=1)
 
         # print (x_test.shape)
-        # x_test_idx = []
-        # # x_test_idx = [np.argmax(w) for w in x_test]
-        # for w in x_test[0]:
-        #     x_test_idx.append(np.argmax(w))
-        # print (x_test_idx)
+        x_test_idx = []
+        # x_test_idx = [np.argmax(w) for w in x_test]
+        for w in x_test[0]:
+            x_test_idx.append(np.argmax(w))
+        print (x_test_idx)
 
     print ("\nGenerated text: ")
     print ("\"%s\"\n\n" %(res_chars))
