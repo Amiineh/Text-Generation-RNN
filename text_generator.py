@@ -48,30 +48,26 @@ for seq_index, seq in enumerate(train_data):
 
 # Model the network:
 x = tf.placeholder(tf.float32, (None, seq_len, dict_size))
-x_flat = tf.reshape(tf.transpose(x, [1, 0, 2]), [-1, dict_size])
+# x_flat = tf.reshape(tf.transpose(x, [1, 0, 2]), [-1, dict_size])
 # x_flat = tf.split(x, seq_len, 0)
 y = tf.placeholder(tf.float32, (None, seq_len, dict_size))
 
 cell = rnn.GRUCell(hidden_size)
-# initial_state = cell.zero_state(batch_size, dtype=tf.float32)
 outputs, states = tf.nn.dynamic_rnn(cell, x,dtype=tf.float32)
 # outputs, states = rnn.static_rnn(cell, tf.unstack(tf.transpose(x, [1, 0, 2])), dtype=tf.float32)
 
 outputs_flat = tf.reshape(outputs, [-1, hidden_size])
 
-softmax_w = tf.Variable(tf.truncated_normal([hidden_size, dict_size]))
-softmax_b = tf.Variable(tf.zeros(dict_size))
+softmax_w = tf.Variable(tf.truncated_normal([hidden_size, dict_size], mean=0, stddev=0.1))
+softmax_b = tf.Variable(tf.truncated_normal((dict_size), mean=0, stddev=0.1))
 
-# predictions = tf.matmul(outputs[:,-1,:], softmax_w) + softmax_b
 predictions = tf.matmul(outputs_flat, softmax_w) + softmax_b
 
-prediction = tf.nn.softmax(predictions[-1])
-
-predictions_flat = tf.reshape(predictions, [-1, dict_size])
 y_flat = tf.reshape(y, [-1, dict_size])
 
-loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y_flat, logits=predictions_flat))
+loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y_flat, logits=predictions))
 train_op = tf.train.RMSPropOptimizer(learning_rate).minimize(loss)
+prediction = tf.nn.softmax(predictions[-1])
 
 # Start training:
 config = tf.ConfigProto()
