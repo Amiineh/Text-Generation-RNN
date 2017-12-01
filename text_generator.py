@@ -90,8 +90,8 @@ for epoch in range(epoch_size):
     res_chars = ''
     for i in range(400):
         if (i != 0):
-            x_test[0, 0:-2] = x_test[0, 1:-1]
-            x_test[0, -1] = predicted
+            x_test[:, 0:-2, :] = x_test[:, 1:-1, :]
+            x_test[:, -1, :] = predicted
         x_test = np.reshape(x_test, [1, seq_len, dict_size])
         predicted = sess.run(predictions, feed_dict={x: x_test})
         predicted_char = idx_to_char[np.argmax(predicted, 1)[0]]
