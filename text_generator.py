@@ -14,7 +14,7 @@ text_len = len(text)
 # Set hyperparameters:
 learning_rate = 0.01
 seq_len = 40
-stride = 3
+stride = 37
 hidden_size = 128
 epoch_size = 20
 batch_size = 100
@@ -75,7 +75,7 @@ for epoch in range(epoch_size):
 
 # Test the model:
 # for i in range(test_size):
-    print ("\n\n-------------------------------------------------------- Test #%d --------------------------------------------------------"%(epoch+1))
+    print ("-------------------------------------------------------- Test #%d --------------------------------------------------------"%(epoch+1))
     print ("Input: ")
     test_input_chars = ''
     rand_idx = randint(0, len(x_train))
@@ -102,5 +102,5 @@ for epoch in range(epoch_size):
         #     x_test_idx.append(np.argmax(w))
 
     print ("\nGenerated text: ")
-    print ("\"%s\"" %(res_chars))
+    print ("\"%s\"\n\n" %(res_chars))
 
