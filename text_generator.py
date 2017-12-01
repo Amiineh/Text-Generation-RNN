@@ -67,11 +67,11 @@ predictions = tf.matmul(outputs_flat, softmax_w) + softmax_b
 
 prediction = tf.nn.softmax(predictions[-1])
 
+predictions_flat = tf.reshape(predictions, [-1, dict_size])
 y_flat = tf.reshape(y, [-1, dict_size])
-# w = tf.ones((batch_size, seq_len))
-# loss = tf.reduce_mean(tf.contrib.seq2seq.sequence_loss(logits=outputs, targets=y, weights= w))
+
 loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y_flat, logits=predictions))
-train_op = tf.train.AdamOptimizer(learning_rate).minimize(loss)
+train_op = tf.train.RMSPropOptimizer(learning_rate).minimize(loss)
 
 # Start training:
 config = tf.ConfigProto()
@@ -84,6 +84,21 @@ for epoch in range(epoch_size):
     for i in range(0, len(x_train), batch_size):
         batch_x = x_train[i:i+batch_size]
         batch_y = y_train[i:i+batch_size]
+
+        # x_test_idx = []
+        # for w in batch_x[0]:
+        #     x_test_idx.append(np.argmax(w))
+        # print (x_test_idx)
+        #
+        # x_test_idx = []
+        # for w in batch_y[0]:
+        #     x_test_idx.append(np.argmax(w))
+        # print (x_test_idx)
+
+        # test_input_chars = ''
+        # for w in x_test_idx:
+        #     test_input_chars += idx_to_char[w]
+        # print (test_input_chars+"\n------------------")
 
         sess.run(train_op, feed_dict={x:batch_x, y: batch_y})
 
@@ -104,7 +119,7 @@ for epoch in range(epoch_size):
 
     # Predict next 400 characters:
     res_chars = ''
-    for i in range(400):
+    for i in range(100):
         if (i != 0):
             x_test = np.append(np.delete(x_test, 0, axis=1), np.reshape(predicted, [1, 1, dict_size]))
         x_test = np.reshape(x_test, [1, seq_len, dict_size])
