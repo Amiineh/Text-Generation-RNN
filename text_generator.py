@@ -108,12 +108,13 @@ for epoch in range(epoch_size):
 
         sess.run(train_op, feed_dict={x:batch_x, y: batch_y})
 
-    report_loss, merge_smry = sess.run([loss, merge], feed_dict={x:x_train, y:y_train})
+    # report_loss, merge_smry = sess.run([loss, merge], feed_dict={x:x_train, y:y_train})
+    report_loss = sess.run(loss, feed_dict={x: x_train, y: y_train})
     print ("Epoch #%d\t Loss: %f" % (epoch+1, report_loss))
     # tf.summary.scalar("loss", report_loss)
-    smry = tf.Summary(value=[tf.Summary.Value(tag="loss", simple_value=report_loss)])
-    writer.add_summary(smry, epoch)
-    writer.add_summary(merge_smry, epoch)
+    # smry = tf.Summary(value=[tf.Summary.Value(tag="loss", simple_value=report_loss)])
+    # writer.add_summary(smry, epoch)
+    # writer.add_summary(merge_smry, epoch)
 
 # Test the model:
     print ("-------------------------------------------------------- Test #%d --------------------------------------------------------"%(epoch+1))
