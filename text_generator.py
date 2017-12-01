@@ -90,17 +90,16 @@ for epoch in range(epoch_size):
     res_chars = ''
     for i in range(400):
         if (i != 0):
-            x_test[:, 0:-2, :] = x_test[:, 1:-1, :]
-            x_test[:, -1, :] = predicted
+            x_test = np.append(np.delete(x_test, 0, axis=1), np.reshape(predicted, [1, 1, dict_size]), axis=1)
         x_test = np.reshape(x_test, [1, seq_len, dict_size])
         predicted = sess.run(predictions, feed_dict={x: x_test})
         predicted_char = idx_to_char[np.argmax(predicted, 1)[0]]
 
         res_chars += predicted_char
-        x_test_idx = []
-        for w in x_test[0]:
-            x_test_idx.append(np.argmax(w))
-        print (x_test_idx)
+        # x_test_idx = []
+        # for w in x_test[0]:
+        #     x_test_idx.append(np.argmax(w))
+        # print (x_test_idx)
 
     print ("\nGenerated text: ")
     print ("\"%s\"\n\n" %(res_chars))
