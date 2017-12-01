@@ -96,10 +96,10 @@ for epoch in range(epoch_size):
         predicted_char = idx_to_char[np.argmax(predicted, 1)[0]]
 
         res_chars += predicted_char
-        # x_test_idx = []
-        # for w in x_test[0]:
-        #     x_test_idx.append(np.argmax(w))
-        # print (x_test_idx)
+        x_test_idx = []
+        for w in x_test[0]:
+            x_test_idx.append(np.argmax(w))
+        print (x_test_idx)
 
     print ("\nGenerated text: ")
     print ("\"%s\"\n\n" %(res_chars))
