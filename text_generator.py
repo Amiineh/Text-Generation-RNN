@@ -70,7 +70,7 @@ prediction = tf.nn.softmax(predictions[-1])
 predictions_flat = tf.reshape(predictions, [-1, dict_size])
 y_flat = tf.reshape(y, [-1, dict_size])
 
-loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y_flat, logits=predictions))
+loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y_flat, logits=predictions_flat))
 train_op = tf.train.RMSPropOptimizer(learning_rate).minimize(loss)
 
 # Start training:
