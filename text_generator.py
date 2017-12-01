@@ -59,7 +59,7 @@ outputs, states = tf.nn.dynamic_rnn(cell, x,dtype=tf.float32)
 outputs_flat = tf.reshape(outputs, [-1, hidden_size])
 
 softmax_w = tf.Variable(tf.truncated_normal([hidden_size, dict_size], mean=0, stddev=0.1))
-softmax_b = tf.Variable(tf.truncated_normal((dict_size), mean=0, stddev=0.1))
+softmax_b = tf.Variable(tf.truncated_normal([dict_size], mean=0, stddev=0.1))
 
 predictions = tf.matmul(outputs_flat, softmax_w) + softmax_b
 
