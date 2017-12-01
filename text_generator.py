@@ -81,27 +81,11 @@ for epoch in range(epoch_size):
         batch_x = x_train[i:i+batch_size]
         batch_y = y_train[i:i+batch_size]
 
-        # x_test_idx = []
-        # for w in batch_x[0]:
-        #     x_test_idx.append(np.argmax(w))
-        # print (x_test_idx)
-        #
-        # x_test_idx = []
-        # for w in batch_y[0]:
-        #     x_test_idx.append(np.argmax(w))
-        # print (x_test_idx)
-
-        # test_input_chars = ''
-        # for w in x_test_idx:
-        #     test_input_chars += idx_to_char[w]
-        # print (test_input_chars+"\n------------------")
-
         sess.run(train_op, feed_dict={x:batch_x, y: batch_y})
 
     print ("Epoch #%d\t Loss: %f" % (epoch+1, sess.run(loss, feed_dict={x:x_train, y:y_train})))
 
 # Test the model:
-# for i in range(test_size):
     print ("-------------------------------------------------------- Test #%d --------------------------------------------------------"%(epoch+1))
     print ("Input: ")
     test_input_chars = ''
@@ -115,17 +99,17 @@ for epoch in range(epoch_size):
 
     # Predict next 400 characters:
     res_chars = ''
-    for i in range(100):
+    for i in range(400):
         if (i != 0):
             x_test = np.append(np.delete(x_test, 0, axis=1), np.reshape(predicted, [1, 1, dict_size]))
         x_test = np.reshape(x_test, [1, seq_len, dict_size])
         predicted = sess.run(prediction, feed_dict={x: x_test})
         predicted_char = idx_to_char[np.argmax(predicted, 0)]
 
-        res_chars += predicted_char
-        x_test_idx = []
-        for w in x_test[0]:
-            x_test_idx.append(np.argmax(w))
+        # res_chars += predicted_char
+        # x_test_idx = []
+        # for w in x_test[0]:
+        #     x_test_idx.append(np.argmax(w))
         # print (x_test_idx)
 
     print ("\nGenerated text: ")
