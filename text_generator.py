@@ -47,8 +47,11 @@ outputs_flat = tf.reshape(outputs, [-1, hidden_size])
 
 softmax_w = tf.Variable(tf.truncated_normal([hidden_size, dict_size], mean=0, stddev=0.1))
 softmax_b = tf.Variable(tf.zeros(dict_size))
+tf.summary.histogram("w", softmax_w)
+tf.summary.histogram("b", softmax_b)
 
 predictions = tf.matmul(outputs_flat, softmax_w) + softmax_b
+tf.summary.histogram("predictions", predictions)
 
 y_flat = tf.reshape(y, [-1, dict_size])
 
@@ -64,6 +67,10 @@ sess = tf.Session(config=config)
 
 sess.run(tf.global_variables_initializer())
 
+# Show summaries:
+writer = tf.summary.FileWriter('./log/', sess.graph)
+merge = tf.summary.merge_all()
+
 # Save the model:
 # saver = tf.train.Saver()
 # saver.restore(sess, "./save/")
@@ -77,7 +84,12 @@ for epoch in range(epoch_size):
 
         sess.run(train_op, feed_dict={x:batch_x, y: batch_y})
 
-    print ("Epoch #%d\t Loss: %f" % (epoch+1, sess.run(loss, feed_dict={x:x_train, y:y_train})))
+    report_loss, merge_smry = sess.run([loss, merge], feed_dict={x:x_train, y:y_train})
+    print ("Epoch #%d\t Loss: %f" % (epoch+1, report_loss))
+    # tf.summary.scalar("loss", report_loss)
+    smry = tf.Summary(value=[tf.Summary.Value(tag="loss", simple_value=report_loss)])
+    writer.add_summary(smry, epoch)
+    writer.add_summary(merge_smry, epoch)
 
 # Test the model:
     print ("-------------------------------------------------------- Test #%d --------------------------------------------------------"%(epoch+1))
