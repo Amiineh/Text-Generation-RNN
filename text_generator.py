@@ -74,8 +74,8 @@ for epoch in range(epoch_size):
     print ("Epoch #%d\t Loss: %f" % (epoch+1, sess.run(loss, feed_dict={x:x_train, y:y_train})))
 
 # Test the model:
-for i in range(test_size):
-    print ("\n\n-------------------------------------------------------- Test #%d --------------------------------------------------------"%(i+1))
+# for i in range(test_size):
+    print ("\n\n-------------------------------------------------------- Test #%d --------------------------------------------------------"%(epoch+1))
     print ("Input: ")
     test_input_chars = ''
     rand_idx = randint(0, len(x_train))
