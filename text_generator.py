@@ -76,6 +76,10 @@ sess = tf.Session(config=config)
 
 sess.run(tf.global_variables_initializer())
 
+# Save the model:
+saver = tf.train.Saver()
+saver.save(sess, "./model.h5", global_step=1000, write_meta_graph=False)
+
 for epoch in range(epoch_size):
     for i in range(0, len(x_train), batch_size):
         batch_x = x_train[i:i+batch_size]
@@ -105,8 +109,8 @@ for epoch in range(epoch_size):
         x_test = np.reshape(x_test, [1, seq_len, dict_size])
         predicted = sess.run(prediction, feed_dict={x: x_test})
         predicted_char = idx_to_char[np.argmax(predicted, 0)]
-
-        # res_chars += predicted_char
+        res_chars += predicted_char
+        
         # x_test_idx = []
         # for w in x_test[0]:
         #     x_test_idx.append(np.argmax(w))
