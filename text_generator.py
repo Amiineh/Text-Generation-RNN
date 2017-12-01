@@ -35,7 +35,19 @@ for seq_index, seq in enumerate(train_data):
         x_train[seq_index, i, seq[i]] = 1
         if i <seq_len-1:
             y_train[seq_index, i, seq[i+1]] = 1
-    y_train[seq_index, ]
+        else:
+            y_train[seq_index, i,target_data[seq_index]] = 1
+
+# x_test_idx = []
+# for w in y_train[0]:
+#     x_test_idx.append(np.argmax(w))
+# print (x_test_idx)
+#
+# x_test_idx = []
+# for w in x_train[0]:
+#     x_test_idx.append(np.argmax(w))
+# print (x_test_idx)
+# print (idx_to_char[40])
 
 # Model the network:
 x = tf.placeholder(tf.float32, (None, seq_len, dict_size))
