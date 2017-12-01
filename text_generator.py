@@ -37,30 +37,67 @@ for seq_index, seq in enumerate(train_data):
             y_train[seq_index, i, seq[i+1]] = 1
 
 # Model the network:
-x = tf.placeholder(tf.float32, (None, seq_len, dict_size))
-y = tf.placeholder(tf.float32, (None, seq_len, dict_size))
+# x = tf.placeholder(tf.float32, (None, seq_len, dict_size))
+# y = tf.placeholder(tf.float32, (None, seq_len, dict_size))
+# 
+# cell = rnn.BasicLSTMCell(hidden_size)
+# outputs, states = tf.nn.dynamic_rnn(cell, x,dtype=tf.float32)
+# tf.summary.histogram("outputs", outputs)
+# 
+# outputs_flat = tf.reshape(outputs, [-1, hidden_size])
+# 
+# softmax_w = tf.Variable(tf.truncated_normal([hidden_size, dict_size], mean=0, stddev=0.1))
+# softmax_b = tf.Variable(tf.zeros(dict_size))
+# tf.summary.histogram("w", softmax_w)
+# tf.summary.histogram("b", softmax_b)
+# 
+# predictions = tf.matmul(outputs_flat, softmax_w) + softmax_b
+# tf.summary.histogram("predictions", predictions)
+# 
+# y_flat = tf.reshape(y, [-1, dict_size])
+# tf.summary.histogram("targets", y_flat)
+# 
+# loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y_flat, logits=predictions))
+# train_op = tf.train.RMSPropOptimizer(learning_rate).minimize(loss)
+# 
+# prediction = tf.nn.softmax(predictions[-1])
 
-cell = rnn.BasicLSTMCell(hidden_size)
-outputs, states = tf.nn.dynamic_rnn(cell, x,dtype=tf.float32)
-tf.summary.histogram("outputs", outputs)
+x = tf.placeholder(tf.float32, shape=(None, None, dict_size), name="xinput")
+# lstm_init_value = np.zeros((1*2*hidden_size,))
 
-outputs_flat = tf.reshape(outputs, [-1, hidden_size])
+# LSTM
+lstm = tf.contrib.rnn.BasicLSTMCell(hidden_size, forget_bias=1.0, state_is_tuple=False)
+# lstm_cells = [tf.contrib.rnn.BasicLSTMCell(hidden_size, forget_bias=1.0, state_is_tuple=False)]
+# lstm = tf.contrib.rnn.MultiRNNCell(lstm_cells, state_is_tuple=False)
 
-softmax_w = tf.Variable(tf.truncated_normal([hidden_size, dict_size], mean=0, stddev=0.1))
-softmax_b = tf.Variable(tf.zeros(dict_size))
-tf.summary.histogram("w", softmax_w)
-tf.summary.histogram("b", softmax_b)
+# Iteratively compute output of recurrent network
+outputs, lstm_new_state = tf.nn.dynamic_rnn(lstm, x, dtype=tf.float32)
 
-predictions = tf.matmul(outputs_flat, softmax_w) + softmax_b
-tf.summary.histogram("predictions", predictions)
+# Linear activation (FC layer on top of the LSTM net)
+rnn_out_W = tf.Variable(tf.random_normal( (hidden_size, dict_size), stddev=0.01 ))
+rnn_out_B = tf.Variable(tf.random_normal( (dict_size, ), stddev=0.01 ))
 
-y_flat = tf.reshape(y, [-1, dict_size])
-tf.summary.histogram("targets", y_flat)
+outputs_reshaped = tf.reshape( outputs, [-1, hidden_size] )
+network_output = ( tf.matmul( outputs_reshaped, rnn_out_W ) + rnn_out_B )
 
-loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y_flat, logits=predictions))
-train_op = tf.train.RMSPropOptimizer(learning_rate).minimize(loss)
+batch_time_shape = tf.shape(outputs)
+final_outputs = tf.reshape( tf.nn.softmax( network_output), (batch_time_shape[0], batch_time_shape[1], dict_size) )
 
-prediction = tf.nn.softmax(predictions[-1])
+
+## Training: provide target outputs for supervised training.
+y = tf.placeholder(tf.float32, (None, None, dict_size))
+y_batch_long = tf.reshape(y, [-1, dict_size])
+
+loss = tf.reduce_mean( tf.nn.softmax_cross_entropy_with_logits(logits=network_output, labels=y_batch_long) )
+train_op = tf.train.RMSPropOptimizer(learning_rate, 0.9).minimize(loss)
+
+predicted = final_outputs
+prediction = network_output
+
+
+
+
+
 
 # Start training:
 config = tf.ConfigProto()
@@ -86,12 +123,13 @@ for epoch in range(epoch_size):
 
         sess.run(train_op, feed_dict={x:batch_x, y: batch_y})
 
-    report_loss, merge_smry = sess.run([loss, merge], feed_dict={x:x_train, y:y_train})
+    # report_loss, merge_smry = sess.run([loss, merge], feed_dict={x:x_train, y:y_train})
+    report_loss = sess.run(loss, feed_dict={x: x_train, y: y_train})
     print ("Epoch #%d\t Loss: %f" % (epoch+1, report_loss))
     # tf.summary.scalar("loss", report_loss)
-    smry = tf.Summary(value=[tf.Summary.Value(tag="loss", simple_value=report_loss)])
-    writer.add_summary(smry, epoch)
-    writer.add_summary(merge_smry, epoch)
+    # smry = tf.Summary(value=[tf.Summary.Value(tag="loss", simple_value=report_loss)])
+    # writer.add_summary(smry, epoch)
+    # writer.add_summary(merge_smry, epoch)
 
 # Test the model:
     print ("-------------------------------------------------------- Test #%d --------------------------------------------------------"%(epoch+1))
@@ -111,7 +149,7 @@ for epoch in range(epoch_size):
         if (i != 0):
             x_test = np.append(np.delete(x_test, 0, axis=1), np.reshape(predicted, [1, 1, dict_size]))
         x_test = np.reshape(x_test, [1, seq_len, dict_size])
-        predicted = sess.run(prediction, feed_dict={x: x_test})
+        predicted = sess.run(prediction, feed_dict={x: x_test})[0]
         predicted_char = idx_to_char[np.argmax(predicted, 0)]
         res_chars += predicted_char
 
