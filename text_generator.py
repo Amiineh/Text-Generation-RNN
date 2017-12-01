@@ -12,11 +12,11 @@ dict_size = len(chars)
 text_len = len(text)
 
 # Set hyperparameters:
-learning_rate = 0.01
+learning_rate = 0.001
 seq_len = 40
 stride = 3
 hidden_size = 128
-epoch_size = 100
+epoch_size = 50
 batch_size = 100
 test_size = 5
 
