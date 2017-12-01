@@ -40,8 +40,9 @@ for seq_index, seq in enumerate(train_data):
 x = tf.placeholder(tf.float32, (None, seq_len, dict_size))
 y = tf.placeholder(tf.float32, (None, seq_len, dict_size))
 
-cell = rnn.GRUCell(hidden_size)
+cell = rnn.BasicLSTMCell(hidden_size)
 outputs, states = tf.nn.dynamic_rnn(cell, x,dtype=tf.float32)
+tf.summary.histogram("outputs", outputs)
 
 outputs_flat = tf.reshape(outputs, [-1, hidden_size])
 
@@ -54,6 +55,7 @@ predictions = tf.matmul(outputs_flat, softmax_w) + softmax_b
 tf.summary.histogram("predictions", predictions)
 
 y_flat = tf.reshape(y, [-1, dict_size])
+tf.summary.histogram("targets", y_flat)
 
 loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y_flat, logits=predictions))
 train_op = tf.train.RMSPropOptimizer(learning_rate).minimize(loss)
