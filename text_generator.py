@@ -14,9 +14,9 @@ text_len = len(text)
 # Set hyperparameters:
 learning_rate = 0.01
 seq_len = 40
-stride = 10
+stride = 3
 hidden_size = 128
-epoch_size = 40
+epoch_size = 100
 batch_size = 100
 test_size = 5
 
