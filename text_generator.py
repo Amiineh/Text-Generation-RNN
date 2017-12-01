@@ -96,6 +96,7 @@ for i in range(test_size):
         predicted = sess.run(predictions, feed_dict={x: x_test})
         predicted_char = idx_to_char[np.argmax(predicted, 1)[0]]
 
+        res_chars += predicted_char
         # x_test_idx = []
         # for w in x_test[0]:
         #     x_test_idx.append(np.argmax(w))
