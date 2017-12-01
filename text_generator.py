@@ -36,30 +36,17 @@ for seq_index, seq in enumerate(train_data):
         if i <seq_len-1:
             y_train[seq_index, i, seq[i+1]] = 1
 
-# x_test_idx = []
-# for w in y_train[0]:
-#     x_test_idx.append(np.argmax(w))
-# print (x_test_idx)
-#
-# x_test_idx = []
-# for w in x_train[0]:
-#     x_test_idx.append(np.argmax(w))
-# print (x_test_idx)
-
 # Model the network:
 x = tf.placeholder(tf.float32, (None, seq_len, dict_size))
-# x_flat = tf.reshape(tf.transpose(x, [1, 0, 2]), [-1, dict_size])
-# x_flat = tf.split(x, seq_len, 0)
 y = tf.placeholder(tf.float32, (None, seq_len, dict_size))
 
 cell = rnn.GRUCell(hidden_size)
 outputs, states = tf.nn.dynamic_rnn(cell, x,dtype=tf.float32)
-# outputs, states = rnn.static_rnn(cell, tf.unstack(tf.transpose(x, [1, 0, 2])), dtype=tf.float32)
 
 outputs_flat = tf.reshape(outputs, [-1, hidden_size])
 
 softmax_w = tf.Variable(tf.truncated_normal([hidden_size, dict_size], mean=0, stddev=0.1))
-softmax_b = tf.Variable(tf.truncated_normal([dict_size], mean=0, stddev=0.1))
+softmax_b = tf.Variable(tf.zeros(dict_size))
 
 predictions = tf.matmul(outputs_flat, softmax_w) + softmax_b
 
@@ -67,6 +54,7 @@ y_flat = tf.reshape(y, [-1, dict_size])
 
 loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y_flat, logits=predictions))
 train_op = tf.train.RMSPropOptimizer(learning_rate).minimize(loss)
+
 prediction = tf.nn.softmax(predictions[-1])
 
 # Start training:
@@ -77,10 +65,12 @@ sess = tf.Session(config=config)
 sess.run(tf.global_variables_initializer())
 
 # Save the model:
-saver = tf.train.Saver()
-saver.save(sess, "./model.h5", global_step=1000, write_meta_graph=False)
+# saver = tf.train.Saver()
+# saver.restore(sess, "./save/")
 
 for epoch in range(epoch_size):
+    # saver.save(sess, "./save/model", global_step=1000, write_meta_graph=False)
+
     for i in range(0, len(x_train), batch_size):
         batch_x = x_train[i:i+batch_size]
         batch_y = y_train[i:i+batch_size]
@@ -110,7 +100,7 @@ for epoch in range(epoch_size):
         predicted = sess.run(prediction, feed_dict={x: x_test})
         predicted_char = idx_to_char[np.argmax(predicted, 0)]
         res_chars += predicted_char
-        
+
         # x_test_idx = []
         # for w in x_test[0]:
         #     x_test_idx.append(np.argmax(w))
