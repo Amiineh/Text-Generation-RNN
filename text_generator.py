@@ -55,7 +55,7 @@ predictions = tf.matmul(outputs[-1], softmax_w) + softmax_b
 # w = tf.ones((batch_size, seq_len))
 # loss = tf.reduce_mean(tf.contrib.seq2seq.sequence_loss(logits=outputs, targets=y, weights= w))
 loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y, logits=predictions))
-train_op = tf.train.RMSPropOptimizer(learning_rate).minimize(loss)
+train_op = tf.train.AdamOptimizer(learning_rate).minimize(loss)
 
 # Start training:
 config = tf.ConfigProto()
