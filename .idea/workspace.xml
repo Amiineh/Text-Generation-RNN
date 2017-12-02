@@ -5,7 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/save/model.data-00000-of-00001" afterPath="$PROJECT_DIR$/save/model.data-00000-of-00001" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/save/model.index" afterPath="$PROJECT_DIR$/save/model.index" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/save/model.meta" afterPath="$PROJECT_DIR$/save/model.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512219988.Aminehs-MacBook-Pro.local" afterPath="$PROJECT_DIR$/log/events.out.tfevents.1512219988.Aminehs-MacBook-Pro.local" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,8 +47,8 @@
       <file leaf-file-name="text_generator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/text_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+            <state relative-caret-position="-189">
+              <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -605,8 +605,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+        <state relative-caret-position="-189">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
