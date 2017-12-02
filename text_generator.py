@@ -82,10 +82,10 @@ merge = tf.summary.merge_all()
 
 # Save the model:
 saver = tf.train.Saver()
-saver.restore(sess=sess, save_path="./save/model")
+# saver.restore(sess=sess, save_path="./save/model")
 
 for epoch in range(epoch_size):
-    saver.save(sess, "./save/model")
+    # saver.save(sess, "./save/model")
 
     for i in range(0, len(x_train), batch_size):
         batch_x = x_train[i:i+batch_size]
