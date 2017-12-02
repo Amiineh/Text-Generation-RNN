@@ -2,47 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a1b458c-4bb9-4779-95f3-e215ee8e5748" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chert.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512137024.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512137796.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512138474.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512138491.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512138647.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512138706.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512138866.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512139098.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512139147.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512139166.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512139241.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512139293.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512139335.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512145368.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512145988.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512146023.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512146166.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512146235.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512146343.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512146397.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512146431.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512146830.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512146872.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512146961.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512147004.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512147045.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512147104.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512147132.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512147189.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512147248.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512147303.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512147367.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512147410.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512147471.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512147695.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512147864.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512147911.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512148007.Aminehs-MacBook-Pro.local" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text_generator.py" afterPath="$PROJECT_DIR$/text_generator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/save/model.data-00000-of-00001" afterPath="$PROJECT_DIR$/save/model.data-00000-of-00001" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/save/model.index" afterPath="$PROJECT_DIR$/save/model.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/save/model.meta" afterPath="$PROJECT_DIR$/save/model.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/events.out.tfevents.1512219988.Aminehs-MacBook-Pro.local" afterPath="$PROJECT_DIR$/log/events.out.tfevents.1512219988.Aminehs-MacBook-Pro.local" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
