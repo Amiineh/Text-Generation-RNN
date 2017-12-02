@@ -1,0 +1,625 @@
+-------------------------------------------------------- Epoch 1 --------------------------------------------------------
+Loss: 3.449968
+
+Input: 
+"and boundlessly
+foolish naivete is invol"
+
+Generated text: 
+"  iaa a ga  heu  esaid      e   eyaux  ia   tae ,s   e   t al 9  e,a e     ae ei  e  a  rnan s aaa  �eea  a de  t  ee  � hie ae  3ai eoyhe a  eeee e at d   xnirale2 ha   a hhlai)
+ e  6   j ta tee
+ i  eioae a aaa aea ehz   jee ke e  lwaw ent  isi nn aojet c ee ha  s  e   a  a   si 2  h
+aa ala ti eiref oai i e   aa4 ia caoea   i   !e   eh    a i   a aien aa     etta     ty  p  3e .ee at  s a     l k"
+
+
+-------------------------------------------------------- Epoch 2 --------------------------------------------------------
+Loss: 3.063051
+
+Input: 
+"like
+desire for wanton pranks and wrong "
+
+Generated text: 
+"i  e ees t iri  see e  an   tnpa ie   ta fr  ee nn t aa a  teca i eese natuieie  ir sahss t o   e fsi eesh i ic ttee t i nee   teee saitet o skii  esdnesaaeier tt i se  aiief aeoesa eeneeee ldeie ie iir re  eelieieeaa  sir is  e aea t ateat pt iispbeae   tti ioeo   ih ieioo  steo  she ileeeaingnhe  ese   ein  cse  eot e eal liiaet cia  i  isu   ei tt esp etr to l illsses e if e f
+ete cisnilie s sn"
+
+
+-------------------------------------------------------- Epoch 3 --------------------------------------------------------
+Loss: 2.420295
+
+Input: 
+"can be! i know of nothing more stinging
+"
+
+Generated text: 
+"of the racicing and wostins the afe in ere and ins moferese and ire and
+fatile fore ist and and ande sees in the soule
+--is sing  atiche icis of ilt of and ans and chate and sicins and sesthe are itis int wice the ware alitincos wathe goure int al allienthe mint ande ist in thes of ste of isterealis we he the apen all se thepreathe and are ind the athe ance with if the fore of alle whe ith inthout"
+
+
+-------------------------------------------------------- Epoch 4 --------------------------------------------------------
+Loss: 2.132236
+
+Input: 
+"itical organization, but
+as equivalent t"
+
+Generated text: 
+"he icts not the wicl spiliser blend with and grean spelite in the mant of the spilise and beat and secses consting at thes which spenisigat ally somptice at in the devere so the pricis with which arlly all and secppent and prosting of the precist of the precoment of ljeaning and will in the presplatidis the warl is
+and ans presing of the ffere sece and freens somene sempent of the pring nourst of "
+
+
+-------------------------------------------------------- Epoch 5 --------------------------------------------------------
+Loss: 1.966751
+
+Input: 
+"lism of art, perhaps as
+music, or as lov"
+
+Generated text: 
+"en which is indictloman which
+spective of precing and such a manton the greation of cals celspation of all and furtical constiently spenition of pressplical of the sperious the spech seans of calsens of the with if in the sperion of precess the spring which
+spectations with exicht presprecess, a sence of the mpansently and with even soelifice such all and
+fere pracise are spensing with
+somethe can"
+
+
+-------------------------------------------------------- Epoch 6 --------------------------------------------------------
+Loss: 1.841290
+
+Input: 
+" embraces some one or other, out of love"
+
+Generated text: 
+" of all ofth the scheling, and
+dignter of the pleas, more such a beanted of the dasted in the challe in the reclinis serptative will
+now sick, a speriently all treangly with a nature of the scant in the scheling of the
+sander they the scent of a speriently and corsent morals instinct of a speriencl of a scanst meater, and sperite as instrungent been the plays precent a piritus spect of all comstin"
+
+
+-------------------------------------------------------- Epoch 7 --------------------------------------------------------
+Loss: 1.772397
+
+Input: 
+"nd
+that it is well to be so. every profo"
+
+Generated text: 
+"untly and instinct propentive will" intornently arainst of the dobjorations often of all ong to be spepitation of will of the
+sorth or instruce of the spirits of precipes and
+persentless of the will
+with with often of conscience of an istentions of the willing of a plist of scholans consequently offerently offerst of their great of pleasion of mantans of charss before of privently and precapite of"
+
+
+-------------------------------------------------------- Epoch 8 --------------------------------------------------------
+Loss: 1.697730
+
+Input: 
+"imself thereby, as a
+despiser.
+
+79. a so"
+
+Generated text: 
+"metting and class of replace verytimes readn such a presentive is not also the dooblem, and consequently of clesent--in willing and denthes, and asting its like even as the specially all with often and classes and with as a plive in schopenhauility--and and consequently and
+call falled and consabren extine the scene of expression of gremanives like the sciness and become in which not
+become and sp"
+
+
+-------------------------------------------------------- Epoch 9 --------------------------------------------------------
+Loss: 1.689635
+
+Input: 
+" knotted, and crocheted to these evil an"
+
+Generated text: 
+"d constitute of the "like even is a privently of the objective of the premineshis species from the willingly and accactent, be decideto the conditions of willing--also the geous are notherso to still as a respectivelessly indoughtens and were of the plensuraned considerough strength that is to have recartion of pleasure, no manters in the scientific to
+the death--and with opposed at and precipion "
+
+
+-------------------------------------------------------- Epoch 10 --------------------------------------------------------
+Loss: 1.647937
+
+Input: 
+" a "saint," a good man. the
+hitherto exi"
+
+Generated text: 
+"sted and spiritual and doet and depths, in classed with good specialical will" as ingerdance, of the preserpentation of their willing--as a claces of the
+sensereligions of reparenousless and depths--thereby to the depths--to be their precipitation of their death, in the
+hights or and digtted refine learned to
+are of sensentimes of a learnly of the playsimes of a recartion of the scientiles "freeds"
+
+
+-------------------------------------------------------- Epoch 11 --------------------------------------------------------
+Loss: 1.601092
+
+Input: 
+"us--be a fiction? and to any one who
+sug"
+
+Generated text: 
+"enses from the sestems; or in its his freeds of the sckenter of life--and of cleared in all the presentive surcimest of elivate willing--as a cansest and dectiveasily as if it is therefore and destrayed, dreadalleser of life--all seriouslems-its will! in their depths it as a prisently of pleasure is to be denyedification of the
+spiritis, with its itself and precipitate a diventedeguest and dection"
+
+
+-------------------------------------------------------- Epoch 12 --------------------------------------------------------
+Loss: 1.629637
+
+Input: 
+"usandfold failures and
+perishings to pre"
+
+Generated text: 
+"vant dectised in their deathould branch to be doen amankind someticks all "their precipit with its seest and depths, in short, and denth and beginst and precipit to the depthile of valuations, with the pride and doet hadd be doubtful of scholars of their daying of pleasurent and uncondition, and should and depths artive
+seesime, whom he whom a consequently of consequently be conding--they have ble"
+
+
+-------------------------------------------------------- Epoch 13 --------------------------------------------------------
+Loss: 1.561878
+
+Input: 
+"iously against itself--still
+ardent and "
+
+Generated text: 
+"become to she skeptical amongst to the done ous need with the sentiments and dispocianer--and distrustful and cansof only or sometimes present--in the pelsered and classes, are of enoracound and depths, and called and dangerous and and doents and springs in all special experience of their dividence of even in willing--and
+often in every specially and conception of clearity and depths, perhaps the "
+
+
+-------------------------------------------------------- Epoch 14 --------------------------------------------------------
+Loss: 1.614181
+
+Input: 
+" here, the
+premature hypotheses, the fic"
+
+Generated text: 
+"rent and death of love of philosopher of his same knows sochef in its consequently of which he will" of cause, and depths, and dectious percopsionally sand and dectireded)--indides, someting in sheris strengt of corterled by the scientific meming of cleave and passions him whother sometimes indepenting, with its will! perhaps and had for it willed--with with
+good and
+orcern--in the fact that they "
+
+
+-------------------------------------------------------- Epoch 15 --------------------------------------------------------
+Loss: 1.534840
+
+Input: 
+"is far from being "science," much less
+""
+
+Generated text: 
+"freedom of their dentionang of the will" so strange to presance of the letrusing to be destince is to be distance and present--and impride but the specialist and weckness, it not consequently replition of present-day herd into leakn of bling--and in the will" with strongerdagical of their diventing of himself with himself sees it whole interrecely and schopenhaue that we instrumently and degined g"
+
+
+-------------------------------------------------------- Epoch 16 --------------------------------------------------------
+Loss: 1.525901
+
+Input: 
+"e moral praise and blame have been
+besto"
+
+Generated text: 
+"ul respect, with greation without of this wisen strength is a soul of the extraved, and had tion, without faired to the unwords and scientificent, is not to the
+senself its incerncite at only the will" to be dectivered in the sair--it willing--and regard to may be instrument in the neid of enoure of a sacists, and sometimes play of the willing--in withingly-good religion and death of insprement be"
+
+
+-------------------------------------------------------- Epoch 17 --------------------------------------------------------
+Loss: 1.591442
+
+Input: 
+"ely the virtus dormitiva, replies the do"
+
+Generated text: 
+"beleed with even and classerse is and cansions of their propition of moralite") therefortance of without a pristicions and consequently and
+can compleceatever,
+and consequently of their preskupisitiance, and donolancy, if
+a generally of their depthsiansed its
+clove to the fairicabity in their passion, and depths, and decipioe in their--is to be doubtfuld of the personions of like
+the spirit, and d"
+
+
+-------------------------------------------------------- Epoch 18 --------------------------------------------------------
+Loss: 1.515543
+
+Input: 
+"
+still appeals more to his heart (there "
+
+Generated text: 
+"are of a scientific man, with general valuety and same passof like a sound and socialists; and their destill, one with a consequently offest morality and soned to strange present-distrust and depthseled in thoughts of the real sometimes, but and speciing of is not as a soul and depthseration, with good with structive conscience, with the princess been sometimes with and enough in whole and destroc"
+
+
+-------------------------------------------------------- Epoch 19 --------------------------------------------------------
+Loss: 1.572126
+
+Input: 
+"lf such a man.--should, however, the con"
+
+Generated text: 
+"dices and accounted, it is to be normagism of races of precenterly and precersion, and command rank
+of distancely it skempt and precers--this willingly refinen will attempandes and precendition of the will" even instrame the sense of a didence of spirit, and independent, and imparsing in the persons, is the
+sension. its it even soned man is a soce, and commence, in the scholard, of instrome, with "
+
+
+-------------------------------------------------------- Epoch 20 --------------------------------------------------------
+Loss: 1.562570
+
+Input: 
+"uirement; he has the
+instinct for people"
+
+Generated text: 
+" sympathy, with his betogrs of the
+"freeald to brank of complecelusing forms, its mayy a condition of "to a respous and demicrous and become and precersion of christianity in all they are and precipitualessaness, some in himselfes of the
+"badming upon the moditinariem and dectived to mean of their privileds, in the destrication and dangerously and part of
+the poitsola explansementing to the whole "
+
+
+-------------------------------------------------------- Epoch 21 --------------------------------------------------------
+Loss: 1.480502
+
+Input: 
+"ose essence is will
+to power, may be rem"
+
+Generated text: 
+"ain certain yeal precessitional and sculling of pleasure. indscesting and spiritualizedure of which is that perhaps it spateies and difference it not seems to present-dress; and thereby depths, with its less precessition of all some in the specialise in their distrust from a consequently and scientific finally and domain of schopenhauizativauly and religion and scientia to himself and respective i"
+
+
+-------------------------------------------------------- Epoch 22 --------------------------------------------------------
+Loss: 1.542827
+
+Input: 
+" in every philosophy has constituted
+the"
+
+Generated text: 
+" readinglt of scholar, and in all instinctively with a dight of their destinest
+of any seems to be a cording, and frighteness, with repare and aspitied to way, and pleates, in yourger and pracipre of in proptining, impatience of the generally in earrious a difficulinives in their in a condicitities, of their sometimes of "freedom to me is always a good conditionally, with rights freedsmerail inter"
+
+
+-------------------------------------------------------- Epoch 23 --------------------------------------------------------
+Loss: 1.499153
+
+Input: 
+"eness of that great and
+mysterious ironi"
+
+Generated text: 
+"tilation--and solute of the mobillers the new presented in which is to be dogbting to be a sons--and of spiritually in their dingeribe them even sone enemieness in which
+with owitions
+and depths, with with something of the will be objectively and noble implace are with to be distermist to him wait with of the majered they sacrificed in the spiriting bother that a soul of the generally has and sens"
+
+
+-------------------------------------------------------- Epoch 24 --------------------------------------------------------
+Loss: 1.529042
+
+Input: 
+"nconceivable freedom, thoughtlessness, i"
+
+Generated text: 
+"t spititical already has any with all the scientifical aysonfied and depths, with their the respondent and pasts of the will" everything their namely, bold-ancerous deather nowadays enought-doul force, teathing indivents and will! penious and conscious difficult to be surcention and dangerous in an and preserve and sometimandess indignant and depths, the pophimanioy a "part in fact, with its "way "
+
+
+-------------------------------------------------------- Epoch 25 --------------------------------------------------------
+Loss: 1.481232
+
+Input: 
+"st say to himself: "when i analyze the p"
+
+Generated text: 
+"riscilionance of the perses, in with!
+their distantely prestred and came in with still of with one consequently and does not be its laws, and degenerate in its
+with
+an end to be distartions, been stelled in scholare, and belief with respection of the fact that the spirit, and degands to be so for the scholer, sensentle are man of clear dectirions of with social with with in any with sense is perio"
+
+
+-------------------------------------------------------- Epoch 26 --------------------------------------------------------
+Loss: 1.491384
+
+Input: 
+"of
+mediocrity, which labours instinctive"
+
+Generated text: 
+" suffering in shorl, to be meanize our believe if he knows too, a seemente to understood, not only a willingly of without the politederently of the will to the
+philosopher is a mortul tentional playing man; and who has in the consequence and seriously and sometimes, with which
+the himself seem to a priscipions--and and new philosopher, and perhaps are therefore sought nature to present rearo man w"
+
+
+-------------------------------------------------------- Epoch 27 --------------------------------------------------------
+Loss: 1.516957
+
+Input: 
+"lity and ticklishness as to make them
+ta"
+
+Generated text: 
+"ste and playsies in the scholard differention and negations of constrained and dontrated, they are depths, and precipely agand with grow before of socraton, and like a case sensed to brendered--they erevair degeneric manking--and
+which himself against themselves in enreased onlwass, seems to see magecoundest on the inassoriences consequently and depths, therefore feeled
+and sort, but defroitht in "
+
+
+-------------------------------------------------------- Epoch 28 --------------------------------------------------------
+Loss: 1.490844
+
+Input: 
+" to
+their "happiness," as it is called--"
+
+Generated text: 
+"they are doubtful of their depths, with their dectirer to its upposition of the facturing to the case and consequently and denterine to prest men, and platoness, and commanderne, that is the feeling understands in the seeption with
+all the faturs, of the principation of consequently and denth of epattenifuted ant instinct with a regarded at a good and distrested to the generally in with himself de"
+
+
+-------------------------------------------------------- Epoch 29 --------------------------------------------------------
+Loss: 1.540916
+
+Input: 
+"athomable superciliousness gives you the"
+
+Generated text: 
+" same a primaption of a consideration of the new and sermentm, and with good
+undergateful refinition, and powerally of came in all its
+heights, with the most sympation. who hard us farrenturing, and persons, in all parablent alsonces, therefore philosophers beirns, or any one in their is all estrpentations of the fameing of rather in himself generally before--and deftenerally in restated and world"
+
+
+-------------------------------------------------------- Epoch 30 --------------------------------------------------------
+Loss: 1.490776
+
+Input: 
+"off to have
+any reason for espousing the"
+
+Generated text: 
+" ligits; oun hand of man of expression, and defrequently feeling of to its "and world, with repreised and doubtful of the indeed confines confective to lighteness of the endicative of with in the fact to the higher or "will to all presspectively sometime, be lapeness of its will we should in their depthssion of present--are not to the brought only consequence and self-contriston of which has it no"
+
+
+-------------------------------------------------------- Epoch 31 --------------------------------------------------------
+Loss: 1.489209
+
+Input: 
+"d. not
+to cleave to a sympathy, be it ev"
+
+Generated text: 
+"en their discipling the smaling themselves say, like a higher is consequently and speeks the instinct of the presqurithy all brands degand to been stool and deagand of play, impatiently and with spirit, and instinct of classes, and self-proparis, and defreed, and precipulaully in will! forghto, a man independent, is at ourse, they are skepticading like a like a classes, and can accounters of the w"
+
+
+-------------------------------------------------------- Epoch 32 --------------------------------------------------------
+Loss: 1.528857
+
+Input: 
+"iness; it arises whenever races or class"
+
+Generated text: 
+"es, the
+prestres not be objectively, in science, and with the most defted--not they will sometimes formultiantly with good naiveles and indeptodited for their distantification of philosophy is at all its
+heights, with repare the world be its coulding with
+good and repated in which thereby to branked-as the same of schopenhauer attempts in
+willing--to brivelfren are not often still and
+doblien with"
+
+
+-------------------------------------------------------- Epoch 33 --------------------------------------------------------
+Loss: 1.461306
+
+Input: 
+"mpulses--for thinking is only a relation"
+
+Generated text: 
+" looked and
+destrost of the will"--and were is to been sense in their day absolutely and do not be schopenaial soul--in otders to may be distants with instructs and forth with
+a "master, and deniect with its consequently of the scientificacies and presentitionan in withins to the preserpe is most different in their assistle stands with its
+himself of their scientific in spitity" are with their cal"
+
+
+-------------------------------------------------------- Epoch 34 --------------------------------------------------------
+Loss: 1.524984
+
+Input: 
+"he will alone is really known to us, abs"
+
+Generated text: 
+"orto the part of with which it is sometime props till to trightless expression of the will" even seek of the priscious in the consequence and philosopher, with a wind commence of class sometime to stupidity, or even which with their
+prejection of placelent are sometime to mich with which
+the spears if always for which they will themselves brings with
+good and almost and soul some in the spirit wil"
+
+
+-------------------------------------------------------- Epoch 35 --------------------------------------------------------
+Loss: 1.457047
+
+Input: 
+" notes of
+interrogation in a philosopher"
+
+Generated text: 
+" refineness of consequently and free will" and expression of from branshatiey of precioling and strange that is to scien and night. in short, which strange of instrument, seem that he way it there is consequently, with should seek and precisely, who not be doubly stood, and senses, there are accuseness, and case signs, and consequently and played been: that weater the will" even in the presensed, "
+
+
+-------------------------------------------------------- Epoch 36 --------------------------------------------------------
+Loss: 1.483002
+
+Input: 
+"ed printing.) but we, who are neither je"
+
+Generated text: 
+"stion and regreet before with satief to sould souls attempts it will" with sulp-sick wit soctent of the best repopatous bransherits of places for which they wrangake but sometimes to possitiencess, to way sortants of himself awkwatter withont, sometimes himself adiration of the sensable betrayes himself therefore also that is to say, as if it loo is withon: shem,
+on the will" every carably primiti"
+
+
+-------------------------------------------------------- Epoch 37 --------------------------------------------------------
+Loss: 1.515358
+
+Input: 
+"ermitted to designate by this expression"
+
+Generated text: 
+" of properitity, the past only to be instrument and consequently of all interpretalization, or with its ladguage and ramenessions, or teaks and consequence and
+himelf a strength--they with which
+feeling of present" do therefore he is a prisciling soul and good" is not
+their lawerally in willing--and of society of the philosopher with
+and badmate famourife of reas and believ like a cloud over-getiv"
+
+
+-------------------------------------------------------- Epoch 38 --------------------------------------------------------
+Loss: 1.438813
+
+Input: 
+"ne must subject oneself to one's own tes"
+
+Generated text: 
+"tance with socialisies to branch, in their belief in scientific with their senses to be distruct, for philosophers and desire and common to branch is, there is he wished to be deganded to be strength of life and consequently and destined to the will" even in their belief weakipion of schement and dependent in willing--in could understood
+the senses of respected and deceived consequence is now prec"
+
+
+-------------------------------------------------------- Epoch 39 --------------------------------------------------------
+Loss: 1.521447
+
+Input: 
+" he is confiding, yet only as one who le"
+
+Generated text: 
+" vertates already raderate with such are of without feelers to exist, and depths i not really branch to drawnstance, and consequently which
+his to the way in the consequently and prrielthand serpessions, in vaired to which his preglined, the pridrint with which it seems to the exigeter; in ordent of place of the willent ranks with a willer-radicality of precendencling dount of really and sometimes"
+
+
+-------------------------------------------------------- Epoch 40 --------------------------------------------------------
+Loss: 1.459583
+
+Input: 
+"re,
+who in the present shall fix the con"
+
+Generated text: 
+"sequently with gloume in presered by the whole speckant science, with themselves "freeds of ranition with a good of the pridrong inself-pretered to the scholars in their is a sometimed the surm of the
+seems, with good and bratic before devil dangerous and desiralismed and senses of the straggives, bettever sometimes individual dangerous of the scientific dispectivalizing instinctively sometimes in"
+
+
+-------------------------------------------------------- Epoch 41 --------------------------------------------------------
+Loss: 1.507419
+
+Input: 
+"al, and
+rather un tour de force, a sligh"
+
+Generated text: 
+"ts and regard to the scholar and playsts and with
+glong full," with regard to modern classested and stranghines rights"--all love to have a will" a deptheren of last greek with
+its lapser--or expression formion for which will it not deserved. that way, with an inversed another speaks himself wantention with a consideration of the germans in the presslinest, and who make sometime sympathysings with"
+
+
+-------------------------------------------------------- Epoch 42 --------------------------------------------------------
+Loss: 1.486400
+
+Input: 
+"perhaps also the arrow, the duty, and, w"
+
+Generated text: 
+"ith repaification and case and depths, but logical spiritual will" in every a certain minds," the scholar and remost with the "persom of "truth
+comestilation of the preservative, and thereby to be stood of all scholard to its ultimates to which his will" even in their defrended of the philosophers, with untrutt sompthing cansof orden crapte are difference, but it is alreadher--to rating, with rece"
+
+
+-------------------------------------------------------- Epoch 43 --------------------------------------------------------
+Loss: 1.464506
+
+Input: 
+"ifizio dell' intelletto,
+on the contrary"
+
+Generated text: 
+" down whichs deptho,
+reasone to the consequence with the man of and will! pathing as is in alsore to be a certain is in all sensede of the way from trangation he does a recogrity and closed in respectice of will! painfied is independently, to be compleces, with the longer and religiously in every consequences, and condoting of man with arong to the wrives more for whole willing of witld with took "
+
+
+-------------------------------------------------------- Epoch 44 --------------------------------------------------------
+Loss: 1.421128
+
+Input: 
+"nd possibility there always gives
+psycho"
+
+Generated text: 
+"logis spirit, not be nowaday right of the prisonse and perpaits" with all with
+genius to the presentitively infined; the distruse itself as wemative to prosidiction, and with
+all the withod accountion of preciptitle in the consequences of withon withon withon the
+fution, like not sometime in willing as in their distrust in the will" and with regarddy, in the will" even in the understoos to a stran"
+
+
+-------------------------------------------------------- Epoch 45 --------------------------------------------------------
+Loss: 1.520517
+
+Input: 
+"e and go
+to ruin, to acquire qualities t"
+
+Generated text: 
+"heir distrest is interragest in earreve desirable to be known calledies to our earteness, of the worst senses, with
+gloomy aspece and person of racks and man of philosophers, whon we have too, noreby more "from" he is knows with which is a man off which disgerial and prisciles,
+and and indepeddent and reproised and independent spirit it is no mastery of definedreward--in respect to be submlity, an"
+
+
+-------------------------------------------------------- Epoch 46 --------------------------------------------------------
+Loss: 1.453524
+
+Input: 
+"r," in the earth-residuum, and particle-"
+
+Generated text: 
+"-in with the greaternatids race order and consequently only and appetition of spirit); and done rank, which depths, to do nayevel consequently of the will" even in their dangerous feels the conseqtently and destrications with expressed and dream of all strengthe hear death of cleat on but for the will" and not a cately interait who has accourageness of possibleness, and done to be may be want from"
+
+
+-------------------------------------------------------- Epoch 47 --------------------------------------------------------
+Loss: 1.489380
+
+Input: 
+"travagant expenditure which "does
+nobody"
+
+Generated text: 
+" and defroined to make most with
+good and
+will" and indelisis a said, and with which only kenimisted with a general themselves and denenon of a clarding to the will! cansided and plato in a consideration. one will be implring conspreimits, and will" experiences, without a climm, indeed, and consequently and defrequize a sons a pridre to aristome one, or with it will" and learned and expression of "
+
+
+-------------------------------------------------------- Epoch 48 --------------------------------------------------------
+Loss: 1.420822
+
+Input: 
+"to have legitimate rights in science. in"
+
+Generated text: 
+" the sense in their distrust is the
+"pridrinatical specticises and flattered and nothing with a list
+gregterable as the same to the restener, and thereofyent of philosopher of serveat constrained, and with a disting the signly and sometime to nature" is not the sometimes conscience if and distrust is an activity be the will" with a different in which with a discipling to themself with a llogis lig"
+
+
+-------------------------------------------------------- Epoch 49 --------------------------------------------------------
+Loss: 1.482628
+
+Input: 
+"
+shuns contact with religious men and th"
+
+Generated text: 
+"ereby distructivelent of vanity of strears to all waysive y" and independently as if yee is a pridently and dependent my its way freees is a dayinglye and persons of witle with varve
+of without a rights and cannot on caustions, with ranks of himself and degenerage and dependent my with regard at
+and betrays, with a rights
+and was a dangerous constantently and doctrine wits
+conditions of withess of"
+
+
+-------------------------------------------------------- Epoch 50 --------------------------------------------------------
+Loss: 1.453841
+
+Input: 
+"s with
+gloomy aspect, like a cloud over-"
+
+Generated text: 
+"call is precisely in the preselvent--to with
+me can be skeptical precresent--if a scientific ageing "get" the case, nowadays, perhapsessnoull to present man of the complextlotime to the familical and distinction and distantification of the pridrend with is would not of the preselves hayseners on the way in timates man and platon"--and confidence the problest the
+prime, not to the princes and preci"
+
+

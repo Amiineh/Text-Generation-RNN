@@ -3,9 +3,13 @@ from tensorflow.contrib import rnn
 from random import *
 import numpy as np
 
-def softmax(x):
-    x -= np.max(x)
-    return np.exp(x) / np.sum(np.exp(x))
+def sample(a):
+    a = np.log(a) / 0.5
+    dist = np.exp(a)/np.sum(np.exp(a))
+    choices = range(len(a))
+    res = np.zeros_like(a, np.float32)
+    res[np.random.choice(choices, p=dist)] = 1
+    return res
 
 # Read data:
 text = open("nietzsche.txt", 'r').read().lower()
@@ -82,10 +86,10 @@ merge = tf.summary.merge_all()
 
 # Save the model:
 saver = tf.train.Saver()
-# saver.restore(sess=sess, save_path="./save/model")
+saver.restore(sess=sess, save_path="./save/model")
 
 for epoch in range(epoch_size):
-    # saver.save(sess, "./save/model")
+    saver.save(sess, "./save/model")
 
     for i in range(0, len(x_train), batch_size):
         batch_x = x_train[i:i+batch_size]
@@ -120,7 +124,7 @@ for epoch in range(epoch_size):
         # Predict the next character:
         x_test = np.reshape(x_test, [1, seq_len, dict_size])
         predicted = sess.run(prediction, feed_dict={x: x_test})
-        probs = np.random.multinomial(1, softmax(predicted), 1)
+        probs = sample(predicted)
         probs_char = idx_to_char[np.argmax(probs)]
         res_chars += probs_char
         # Add predicted char to x_test sequence:
