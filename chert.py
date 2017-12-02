@@ -100,7 +100,7 @@ def run(train_data, target_data, unique_chars, len_unique_chars):
         print "Seed:", seed_chars
 
         #predict next 1000 characters
-        for i in range(1000):
+        for i in range(100):
             if i > 0:
                 remove_fist_char = seed[:,1:,:]
                 seed = np.append(remove_fist_char, np.reshape(probabilities, [1, 1, len_unique_chars]), axis=1)
