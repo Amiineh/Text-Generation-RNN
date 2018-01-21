@@ -6,8 +6,9 @@ During test time, we pick a random window of our training text and concatenate t
 ## Results
 Some of the results are shown here. For more results, you can take a look at results.txt. 
 
-<br />
-##### Epoch 1
+
+Epoch 1
+======
 Input: 
 ```
 and boundlessly foolish naivete is invol
@@ -20,8 +21,8 @@ Generated text:
 aa ala ti eiref oai i e   aa4 ia caoea   i   !e   eh    a i   a aien aa     etta     ty  p  3e .ee at  s a     l k
 ```
 
-<br />
-##### Epoch 3
+
+#### Epoch 3
 Input: 
 ```
 can be! i know of nothing more stinging
@@ -33,8 +34,9 @@ fatile fore ist and and ande sees in the soule
 --is sing  atiche icis of ilt of and ans and chate and sicins and sesthe are itis int wice the ware alitincos wathe goure int al allienthe mint ande ist in thes of ste of isterealis we he the apen all se thepreathe and are ind the athe ance with if the fore of alle whe ith inthout
 ```
 
-<br />
-##### Epoch 5
+
+Epoch 5
+------
 Input: 
 ```
 lism of art, perhaps as
@@ -49,7 +51,7 @@ fere pracise are spensing with
 somethe can
 ```
 
-<br />
+
 ##### Epoch 48
 Input: 
 ```
