@@ -21,9 +21,8 @@ Generated text:
 aa ala ti eiref oai i e   aa4 ia caoea   i   !e   eh    a i   a aien aa     etta     ty  p  3e .ee at  s a     l k
 ```
 
-
-Epoch 3
-------
+- - - - 
+***Epoch 3***
 Input: 
 ```
 can be! i know of nothing more stinging
@@ -67,3 +66,17 @@ Generated text:
 gregterable as the same to the restener, and thereofyent of philosopher of serveat constrained, and with a disting the signly and sometime to nature" is not the sometimes conscience if and distrust is an activity be the will" with a different in which with a discipling to themself with a llogis lig
 ```
 
+Epoch 50
+------
+Input: 
+```
+s with
+gloomy aspect, like a cloud over-
+```
+
+Generated text: 
+```
+call is precisely in the preselvent--to with
+me can be skeptical precresent--if a scientific ageing "get" the case, nowadays, perhapsessnoull to present man of the complextlotime to the familical and distinction and distantification of the pridrend with is would not of the preselves hayseners on the way in timates man and platon"--and confidence the problest the
+prime, not to the princes and preci
+```
