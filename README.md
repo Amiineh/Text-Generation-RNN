@@ -21,8 +21,9 @@ Generated text:
 aa ala ti eiref oai i e   aa4 ia caoea   i   !e   eh    a i   a aien aa     etta     ty  p  3e .ee at  s a     l k
 ```
 
-- - - - 
-***Epoch 3***
+ 
+Epoch 3
+------
 Input: 
 ```
 can be! i know of nothing more stinging
