@@ -20,6 +20,7 @@ aa ala ti eiref oai i e   aa4 ia caoea   i   !e   eh    a i   a aien aa     etta
 ```
 
 ##### Epoch 3
+-----
 Input: 
 ```
 can be! i know of nothing more stinging
@@ -31,19 +32,20 @@ fatile fore ist and and ande sees in the soule
 --is sing  atiche icis of ilt of and ans and chate and sicins and sesthe are itis int wice the ware alitincos wathe goure int al allienthe mint ande ist in thes of ste of isterealis we he the apen all se thepreathe and are ind the athe ance with if the fore of alle whe ith inthout
 ```
 
-##### Epoch 3
+##### Epoch 5
+---
 Input: 
 ```
-imself thereby, as a despiser.
-
-79. a so
+lism of art, perhaps as
+music, or as lov
 ```
-
 Generated text: 
 ```
-metting and class of replace verytimes readn such a presentive is not also the dooblem, and consequently of clesent--in willing and denthes, and asting its like even as the specially all with often and classes and with as a plive in schopenhauility--and and consequently and
-call falled and consabren extine the scene of expression of gremanives like the sciness and become in which not
-become and sp
+en which is indictloman which
+spective of precing and such a manton the greation of cals celspation of all and furtical constiently spenition of pressplical of the sperious the spech seans of calsens of the with if in the sperion of precess the spring which
+spectations with exicht presprecess, a sence of the mpansently and with even soelifice such all and
+fere pracise are spensing with
+somethe can
 ```
 
 ##### Epoch 48
