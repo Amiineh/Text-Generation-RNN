@@ -3,12 +3,12 @@ In this project, we use a Recursive Neural Network with LSTM cells to generate t
 During training time, the input of the network is a window of 40 characters, in a one-hot vector with the same length of our dictionary, and stride 3. And we use the next character (41st character) as the target character.
 During test time, we pick a random window of our training text and concatenate the predicted output with the input and continue generating the next character.
 
-## Results
+# Results
 Some of the results are shown here. For more results, you can take a look at results.txt. 
 
 
 Epoch 1
-======
+------
 Input: 
 ```
 and boundlessly foolish naivete is invol
@@ -22,7 +22,8 @@ aa ala ti eiref oai i e   aa4 ia caoea   i   !e   eh    a i   a aien aa     etta
 ```
 
 
-#### Epoch 3
+Epoch 3
+------
 Input: 
 ```
 can be! i know of nothing more stinging
@@ -52,7 +53,8 @@ somethe can
 ```
 
 
-##### Epoch 48
+Epoch 48
+------
 Input: 
 ```
 to have legitimate rights in science. in
